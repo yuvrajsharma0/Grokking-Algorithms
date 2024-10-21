@@ -6,10 +6,24 @@ function main() {
 
 main();
 
-function insertionSort(arr) {}
+/*
+    Not completed
+*/
 
-function findSmallest(arr) {
-	let sm;
+function insertionSort(arr) {
+	for (let i = 1; i < arr.length; i++) {
+		let key = arr[i];
+		let j = i - 1;
 
-	return sm;
+		while (j >= 0) {
+			if (arr[j] > key) {
+				arr[i] = arr[j];
+				arr[j] = key;
+			}
+
+			j = j - 1;
+		}
+	}
+
+	return arr;
 }
